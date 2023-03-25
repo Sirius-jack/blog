@@ -1,0 +1,59 @@
+@import "vars"
+
+.header
+ padding-bottom: 32px
+ background-color: $header_bg-color
+
+.header,
+.footer
+  text-align: center
+
+.footer
+  background-color: $footer_bg-color
+  padding: 32px
+
+.menu_panel
+  justify-content: space-between
+
+.card
+  margin: 16px
+.card a
+  background-color: var(--bs-info-bg-subtle)
+
+  &:hover
+    background-color: var(--bs-primary-border-subtle)
+
+.card img
+  transform: scale(1)
+  transition: transform 3s
+
+.card img:hover
+  transform: scale(2)
+  transition: transform 3s 300ms
+  z-index: 1
+
+.reset,
+.submit
+  margin: 16px
+
+.classWithPad
+  margin: 16px
+  padding: 16px
+
+.avatar img
+  width: 100%
+  transform: scale(1)
+  transition: transform 1s 300ms
+
+.avatar:hover img
+  transform: scale(1.2)
+
+.timer,
+.date
+  text-align: center
+
+.timer
+  font-size: 2rem
+
+.date
+  font-style: italic
