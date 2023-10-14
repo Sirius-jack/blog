@@ -8,7 +8,7 @@ function getDay() {
     let month = day.getMonth();
     let year = day.getFullYear();
     let time = date < 10 ? '0' + date + ' ' : date + ' ';
-    time += month < 10 ? '0' + (month + 1) : (month + 1);
+    time += month < 9 ? '0' + (month + 1) : (month + 1);
     time += ' ' + year;
     return time;
 }
